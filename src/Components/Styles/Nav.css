@@ -1,0 +1,99 @@
+.Nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+    align-items: center;
+    padding: 20px;
+}
+
+.anchors {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    height: 30px;
+}
+
+.anchors li {
+    display: inline-block;
+}
+
+
+.anchors a{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 9px;
+}
+
+.anchors .links::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: wheat;
+    transition: width .3s;
+}
+
+.anchors .links:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
+.lgo{
+    height: 80px;
+    object-fit: contain;
+}
+
+.menu{
+    display: none;
+}
+
+.line{
+    height: 2px;
+    width: 25px;
+    background-color: seashell;
+    margin: 2px;
+    border-radius: 20%;
+}
+
+
+
+/* Responsive Area */
+
+@media only screen and (max-width: 768px) {
+    .Nav{
+        margin: 0px 35px;
+    }
+
+    .menu{
+        display: flex;
+        cursor: pointer;
+        height: 45px;
+        width: 45px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in 1s;
+    }
+
+    .menu:hover{
+        transition: 1s ease-in;
+        transform: rotate(180deg);
+    }
+
+	.anchors{
+        display: none;
+
+    }
+
+    .sideBar{
+        display: none;
+    }
+
+}

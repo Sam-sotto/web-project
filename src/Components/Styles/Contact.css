@@ -1,0 +1,34 @@
+.Contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.description {
+    margin: 55px 15px 0px 0px;
+    flex-basis: 40%;
+}
+
+.photo img{
+    margin: 55px 0px 200px 35px;
+    height: 210px;
+    width: 210px;
+    flex-basis: 40%;
+    border-radius: 50%;
+}
+
+/* Responsive Area */
+
+@media only screen and (max-width: 768px) {
+    .description{
+        flex-basis: 75%;
+    }
+
+    .photo img{
+        height: 270px;
+        width: 270px;
+    }
+
+
+
+}

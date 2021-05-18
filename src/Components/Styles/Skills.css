@@ -1,0 +1,43 @@
+.Skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pro-bar .html .progress-bar{
+    margin: 20px 0px;
+    width: 75px;
+    height: 4px;
+}
+
+.pro-bar{
+    flex-basis: 40%;
+    margin-top: 55px;
+}
+
+.Line{
+    padding-bottom: 10px;
+}
+
+
+.photo img{
+    margin: 55px 0px 200px 35px;
+    height: 270px;
+    width: 270px;
+    flex-basis: 40%;
+    border-radius: 50%;
+}
+
+/* Responsive Area */
+
+@media only screen and (max-width: 768px) {
+    .photo img{
+        margin: 55px 40px 100px 35px;
+    }
+
+    .pro-bar{
+        flex-basis: 80%;
+    }
+
+
+}

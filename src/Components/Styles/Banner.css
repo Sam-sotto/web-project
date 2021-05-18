@@ -1,0 +1,15 @@
+.banner{
+    
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 650px;
+    border-radius: 1%;
+}
+
+/*.shadow{
+
+    height: 35.2rem;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.678),#0000001c);
+}*/ 
+

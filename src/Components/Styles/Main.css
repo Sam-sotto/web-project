@@ -1,0 +1,46 @@
+.Main-Card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 240px;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0px;
+}
+
+.buttons button{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    height: 40px;
+    border: 1px solid #ffc861;
+    font-weight: 300;
+    border-radius: 20px;
+    margin-right: 1rem;
+    padding: .5rem 2rem;
+    background-color: #2d7770;
+}
+
+.buttons button:hover {
+    color: #2d7770;
+    background-color: whitesmoke ;
+    transition: all 0.2s;
+  }
+
+  /* Responsive Area */
+
+@media only screen and (max-width: 768px) {
+    .buttons{
+        flex-wrap: wrap;
+    }
+
+    .buttons button{
+        margin-bottom: 10px;
+    }
+
+}
