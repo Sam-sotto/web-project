@@ -2,9 +2,6 @@ import React from 'react'
 import Line from './Line'
 import './Styles/Skills.css'
 
-
-
-
 function Skills() {
 
     const css = {
