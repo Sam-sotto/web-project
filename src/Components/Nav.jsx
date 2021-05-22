@@ -1,22 +1,16 @@
 import React from 'react'
 import './Styles/Nav.css'
 import {Link} from 'react-router-dom'
+import LongMenu from './NavBtn'
 
 
 function Nav() {
-
-  
-
 
     return (
         <div className="Nav">
                 <img className="lgo" src="/images/logo.png" alt="logo"/>
                 
-               <div className="menu" >
-                   <div className="line line-one"></div>
-                   <div className="line line-two"></div>
-                   <div className="line"></div>
-               </div>
+                <LongMenu/>
 
 
             <div className="anchors">
