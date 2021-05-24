@@ -1,14 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom' 
 import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import grey from '@material-ui/core/colors/grey';
+import { makeStyles } from '@material-ui/core/styles'
 
-const options = [
-  'Portfolio',
-  'Skills',
-  'Contact',
-];
+
 
 const ITEM_HEIGHT = 48;
 
@@ -24,8 +23,18 @@ export default function LongMenu() {
     setAnchorEl(null);
   };
 
+  const useStyles = makeStyles({
+    root: {
+        textDecoration: 'none',
+    },
+})
+
+  const anc = useStyles();
+  
+
 
   return (
+
     <div classname="NavBtn">
       <IconButton
         aria-label="more"
@@ -33,7 +42,7 @@ export default function LongMenu() {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <MoreVertIcon />
+        <MoreVertIcon style={{ color: grey[100] }} />
       </IconButton>
       <Menu
         id="long-menu"
@@ -45,14 +54,22 @@ export default function LongMenu() {
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
             width: '20ch',
+            textDecoration: 'none',
           },
         }}
       >
-        {options.map((option) => (
-          <MenuItem key={option} selected={option === 'Portfolio'} onClick={handleClose}>
-            {option}
-          </MenuItem>
-        ))}
+      <Link to="/">
+        <MenuItem onClick={handleClose}><li><a href="Portfolio" className={anc.root}>Portfolio</a></li></MenuItem>
+      </Link>
+
+      <Link to="Skills">
+        <MenuItem onClick={handleClose}><li> <a href="Skills" className={anc.root}>Skills</a></li></MenuItem>
+      </Link>
+
+      <Link to="Contact">
+        <MenuItem onClick={handleClose}><li><a href="Contact" className={anc.root}>Contact</a></li></MenuItem>
+      </Link>
+
       </Menu>
     </div>
   );

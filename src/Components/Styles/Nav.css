@@ -62,7 +62,9 @@
     border-radius: 20%;
 }
 
-
+.MuiIconButton-root {
+    display: none;
+}
 
 /* Responsive Area */
 
