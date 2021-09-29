@@ -12,7 +12,7 @@ const PageBx = (props) =>{
                     <div>
                          <h2>{props.title}</h2>
                         <p>{props.description}</p>
-                        <button className="btn btn-primary btn-sm">Click</button>
+                        <button className="btn btn-primary btn-sm" >Click</button>
                     </div>
                 </div>
              </div>
