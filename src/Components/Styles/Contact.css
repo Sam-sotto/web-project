@@ -11,10 +11,10 @@
 
 .photo img{
     margin: 55px 0px 200px 35px;
-    height: 210px;
-    width: 210px;
+    height: 262px;
+    width: 297px;
     flex-basis: 40%;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
 /* Responsive Area */

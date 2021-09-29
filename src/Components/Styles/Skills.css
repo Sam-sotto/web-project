@@ -23,9 +23,9 @@
 .photo img{
     margin: 55px 0px 200px 35px;
     height: 270px;
-    width: 270px;
+    width: 440px;
     flex-basis: 40%;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
 /* Responsive Area */

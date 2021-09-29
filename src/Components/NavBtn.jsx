@@ -26,6 +26,9 @@ export default function LongMenu() {
   const useStyles = makeStyles({
     root: {
         textDecoration: 'none',
+        'a:hover': { 
+          textDecoration: 'none',
+         },
     },
 })
 

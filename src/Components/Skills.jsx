@@ -33,7 +33,7 @@ function Skills() {
     return (
         <div className="Skills">
             <div className="photo">
-                <img src="/images/bg-2.jpg" alt=""/>
+                <img src="/images/Skills.jpg" alt=""/>
             </div>
             <div className="pro-bar">
                 <Line languages="Css/Sass" size={css} />
